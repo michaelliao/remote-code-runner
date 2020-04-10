@@ -1,0 +1,34 @@
+{
+    "ip": "$RCR_IP",
+    "port": "$RCR_PORT",
+    "tempdir": "$RCR_TEMP",
+    "docker": "docker run -t --rm --cpus=1 --network none -w /app -v %s:/app %s %s",
+    "timeout": "$RCR_TIMEOUT",
+    "languages": {
+        "java": {
+            "file": "Main.java",
+            "image": "openjdk:14-slim",
+            "command": "java -Xmx48m --source 14 --enable-preview -XX:+ShowCodeDetailsInExceptionMessages Main.java"
+        },
+        "python": {
+            "file": "main.py",
+            "image": "python:3.8-slim",
+            "command": "python3 -B main.py"
+        },
+        "ruby": {
+            "file": "main.rb",
+            "image": "ruby:2.7-slim",
+            "command": "ruby main.rb"
+        },
+        "node": {
+            "file": "main.js",
+            "image": "node:13.12-slim",
+            "command": "node main.js"
+        },
+        "c": {
+            "file": "main.c",
+            "image": "gcc:9.3",
+            "command": "gcc -Wall -o main main.c && ./main"
+        }
+    }
+}
