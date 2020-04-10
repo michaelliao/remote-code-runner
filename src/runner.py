@@ -107,6 +107,7 @@ def run(cmd, cwd, timeout):
         result['timeout'] = True
     except subprocess.CalledProcessError as e:
         result['error'] = True
+        result['output'] = decode(e.output)
     return result
 
 def decode(s):
