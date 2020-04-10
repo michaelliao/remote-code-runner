@@ -17,8 +17,7 @@ $ sudo apt install git docker.io python3.8
 Get source:
 
 ```
-$ pwd
-/srv
+$ cd /srv
 $ sudo git clone https://github.com/michaelliao/remote-code-runner.git
 ```
 
