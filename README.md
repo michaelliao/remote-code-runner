@@ -1,6 +1,6 @@
 # Remote Code Runner
 
-Remote Code Runner is a simple service for running code on remote server side. Docker is used to execute untrusted code in a sandbox environment.
+Remote Code Runner is a simple code service for running code on remote server side. Docker is used to execute untrusted code in a sandbox environment.
 
 # Install
 
@@ -9,6 +9,10 @@ Environment:
 - Ubuntu Linux 18.04
 - Docker 19.x
 - Python 3.8
+
+MAKE SURE the login user has `sudo` privileges and does not require entering a password.
+
+Install all required software:
 
 ```
 $ sudo apt install git docker.io python3.8
