@@ -7,8 +7,8 @@
     "languages": {
         "java": {
             "file": "Main.java",
-            "image": "openjdk:14-slim",
-            "command": "java -Xmx48m --source 14 --enable-preview -XX:+ShowCodeDetailsInExceptionMessages Main.java"
+            "image": "openjdk:15-slim",
+            "command": "java -Xmx48m --source 15 --enable-preview -XX:+ShowCodeDetailsInExceptionMessages Main.java"
         },
         "python": {
             "file": "main.py",
