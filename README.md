@@ -8,14 +8,14 @@ Environment:
 
 - Ubuntu Linux 18.04
 - Docker 19.x
-- Python 3.8
+- Python 3.9
 
 MAKE SURE the login user has `sudo` privileges and does not require entering a password.
 
 Install all required software:
 
 ```
-$ sudo apt install git docker.io python3.8
+$ sudo apt install git docker.io python3.9
 ```
 
 Get source:
@@ -99,7 +99,7 @@ How to add a new language:
         ...
         "node": {
             "file": "main.js",
-            "image": "node:13.12-slim",
+            "image": "node:14.17-slim",
             "command": "node main.js"
         }
     }
