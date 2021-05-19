@@ -8,14 +8,14 @@ Environment:
 
 - Ubuntu Linux 18.04
 - Docker 19.x
-- Python 3.9
+- Python 3.8
 
 MAKE SURE the login user has `sudo` privileges and does not require entering a password.
 
 Install all required software:
 
 ```
-$ sudo apt install git docker.io python3.9
+$ sudo apt install git docker.io python3.8
 ```
 
 Get source:
