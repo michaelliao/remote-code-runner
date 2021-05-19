@@ -7,12 +7,12 @@
     "languages": {
         "java": {
             "file": "Main.java",
-            "image": "openjdk:15-slim",
-            "command": "java -Xmx48m --source 15 --enable-preview -XX:+ShowCodeDetailsInExceptionMessages Main.java"
+            "image": "openjdk:16-slim",
+            "command": "java -Xmx48m --source 16 --enable-preview -XX:+ShowCodeDetailsInExceptionMessages Main.java"
         },
         "python": {
             "file": "main.py",
-            "image": "python:3.8-slim",
+            "image": "python:3.9-slim",
             "command": "python3 -B main.py"
         },
         "ruby": {
@@ -22,7 +22,7 @@
         },
         "node": {
             "file": "main.js",
-            "image": "node:13.12-slim",
+            "image": "node:14.17-slim",
             "command": "node main.js"
         },
         "c": {
